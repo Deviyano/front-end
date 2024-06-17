@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Gamepicker</title>
+</head>
+<body>
+    <h1>Gamepicker</h1>
+    <div class="filter-container">
+        <input type="number" id="priceInput" placeholder="Price lower than...">
+        <select id="genreSelect">
+            <option value="">Select Genre</option>
+            <option value="RPG">RPG</option>
+            <option value="Action">Action</option>
+            <option value="Simulation">Simulation</option>
+            <option value="Sandbox">Sandbox</option>
+            <option value="FPS">FPS</option>
+            <option value="Sport">Sport</option>
+            <option value="Looter-shooter">Looter-shooter</option>
+            <option value="MOBA">MOBA</option>
+        </select>
+        <input type="number" id="ratingInput" placeholder="Rating lower than...">
+        <button onclick="applyFilters()">Apply Filters</button>
+        <button id="showCartButton">Bereken Prijs</button>
+    </div>
+    <div class="Game_log"></div>
+    <div class="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <ul class="cart-items"></ul>
+        <hr> 
+        <p id="totalPrice"></p> 
+        <button id="returnToGamePickerButton">Terug naar Games</button>
+    </div>   
+</body>
+</html>
